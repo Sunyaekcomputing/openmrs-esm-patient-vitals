@@ -52,6 +52,7 @@ function extractDimensionVisitScores(
 ) {
   const visitScores: Array<Record<'hiv' | 'mh' | 'sgm' | 'em', number[]>> = [];
   let maxVisitCount = 0;
+  let totalPatients = 0;
 
   const uuids = {
     hiv: DOMAIN_UUIDS[`hiv_domain_${selectedType}` as keyof typeof DOMAIN_UUIDS],
@@ -114,6 +115,7 @@ function extractDimensionVisitScores(
     });
 
     const sortedEncounters = Array.from(encounters.values()).sort((a, b) => a.date.getTime() - b.date.getTime());
+    if (sortedEncounters.length > 0) totalPatients++;
     maxVisitCount = Math.max(maxVisitCount, sortedEncounters.length);
     sortedEncounters.forEach((encounterGroup, encounterIndex) => {
       const current = visitScores[encounterIndex] || { hiv: [], mh: [], sgm: [], em: [] };
@@ -126,9 +128,15 @@ function extractDimensionVisitScores(
   });
 
   const visitCount = Math.max(visitScores.length, maxVisitCount, getMaxVisitCount(allPatientsData));
-  return Array.from({ length: visitCount }, (_, index) =>
-    visitScores[index] || { hiv: [], mh: [], sgm: [], em: [] },
-  );
+  // A patient who has no score for a visit counts as 0, and every visit is
+  // averaged over ALL patients at this hospital (not only those who had it).
+  return Array.from({ length: visitCount }, (_, index) => {
+    const scores = visitScores[index] || { hiv: [], mh: [], sgm: [], em: [] };
+    (['hiv', 'mh', 'sgm', 'em'] as const).forEach((key) => {
+      while (scores[key].length < totalPatients) scores[key].push(0);
+    });
+    return scores;
+  });
 }
 
 function calculateVisitAverages(

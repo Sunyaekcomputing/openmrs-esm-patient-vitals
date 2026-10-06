@@ -95,6 +95,7 @@ function getOrdinalSuffix(n: number) {
 function calculateVisitScores(allPatientsData: any[]) {
   const visitScores: Array<Record<'as' | 'es' | 'is', number[]>> = [];
   let maxVisitCount = 0;
+  let totalPatients = 0;
 
   allPatientsData.forEach((patientObservations) => {
     const encounters = new Map<string, { date: Date; scores: Record<'as' | 'es' | 'is', number[]> }>();
@@ -145,6 +146,7 @@ function calculateVisitScores(allPatientsData: any[]) {
     });
 
     const sortedEncounterGroups = Array.from(encounters.values()).sort((a, b) => a.date.getTime() - b.date.getTime());
+    if (sortedEncounterGroups.length > 0) totalPatients++;
     maxVisitCount = Math.max(maxVisitCount, sortedEncounterGroups.length);
 
     sortedEncounterGroups.forEach((encounterGroup, encounterIndex) => {
@@ -157,8 +159,16 @@ function calculateVisitScores(allPatientsData: any[]) {
   });
 
   const visitCount = Math.max(visitScores.length, maxVisitCount, getMaxVisitCount(allPatientsData));
+  // A patient who has no score for a visit counts as 0, and every visit is
+  // averaged over ALL patients at this hospital (not only those who had it).
   const visitAverages = calculateVisitAverages(
-    Array.from({ length: visitCount }, (_, index) => visitScores[index] || { as: [], es: [], is: [] }),
+    Array.from({ length: visitCount }, (_, index) => {
+      const scores = visitScores[index] || { as: [], es: [], is: [] };
+      (['as', 'es', 'is'] as const).forEach((key) => {
+        while (scores[key].length < totalPatients) scores[key].push(0);
+      });
+      return scores;
+    }),
   );
 
   return visitAverages;

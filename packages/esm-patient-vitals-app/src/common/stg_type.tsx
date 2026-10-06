@@ -229,6 +229,7 @@ function calculateVisitScores(
   const visitScores: Array<Record<'internalized' | 'anticipated' | 'enacted', number[]>> = [];
   const visitDates: Date[] = [];
   let maxVisitCount = 0;
+  let totalPatients = 0;
 
   const flattenObservations = (observations: any[]): any[] =>
     observations.flatMap((observation: any) => [
@@ -297,6 +298,7 @@ function calculateVisitScores(
     });
 
     const sortedEncounters = Array.from(encounters.values()).sort((a, b) => a.date.getTime() - b.date.getTime());
+    if (sortedEncounters.length > 0) totalPatients++;
     maxVisitCount = Math.max(maxVisitCount, sortedEncounters.length);
     sortedEncounters.forEach((encounterGroup, encounterIndex) => {
       if (!visitScores[encounterIndex]) {
@@ -309,10 +311,13 @@ function calculateVisitScores(
     });
   });
 
+  // A patient who has no score for a visit counts as 0, and every visit is
+  // averaged over ALL patients at this hospital (not only those who had it).
   const average = (values: number[]) => {
-    if (!values.length) return 0;
+    const denominator = Math.max(totalPatients, values.length);
+    if (!denominator) return 0;
     // Round to 1 decimal place, same as the Dimensions chart
-    return Number((values.reduce((sum, value) => sum + value, 0) / values.length).toFixed(1));
+    return Number((values.reduce((sum, value) => sum + value, 0) / denominator).toFixed(1));
   };
 
   const visitCount = Math.max(visitScores.length, maxVisitCount, getMaxVisitCount(allPatientsData));
