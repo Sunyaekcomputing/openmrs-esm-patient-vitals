@@ -1501,6 +1501,118 @@ export default function AllPatientsDashboard() {
 }
 
 // Small inline ART ID panel component that fetches form answers and displays both forms
+// ---------------- ART ID: visit-wise Intersectional score (replaces stigma score chart) ----------------
+const STIGMA_VISIT_UUIDS = new Set([
+  'b5be0487-ef8e-4c39-ad86-39dd341cf0a7', // Anticipated stigma score
+  '367a6a1f-b951-4eac-8068-a5f0801d6aff', // Enacted stigma score
+  '3f318839-599e-47d7-96f5-4c81ca64dfc3', // Internalized stigma score
+]);
+
+// same order and colours as the old chart: आत्म (pink), अपेक्षित (blue), व्यावहारिक (yellow)
+const INTERSECTIONAL_LINES = [
+  { uuid: '54addbef-17f5-4678-988a-9d6a68ad38f7', label: 'आत्मलान्छना (Intersectional) /100', color: 'rgba(255, 99, 132, 0.85)' },
+  { uuid: '260b7159-9cc9-442d-b641-133b5dbbce06', label: 'अपेक्षित लान्छना (Intersectional) /120', color: 'rgba(54, 162, 235, 0.85)' },
+  { uuid: 'fb3a85e9-5154-46f7-8c00-54cce586332c', label: 'व्यावहारिक लान्छना (Intersectional) /130', color: 'rgba(255, 206, 86, 0.85)' },
+];
+
+function toScore(v: any): number | null {
+  const raw = v?.display ?? v;
+  if (typeof raw === 'number') return raw;
+  if (typeof raw === 'string') {
+    const m = raw.match(/-?\d+(?:\.\d+)?/);
+    return m ? parseFloat(m[0]) : null;
+  }
+  return null;
+}
+
+function ArtIdIntersectionalLineChart({ patientUuid }: { patientUuid: string }) {
+  const [visits, setVisits] = React.useState<Record<string, number | null>[]>([]);
+  const [loading, setLoading] = React.useState(false);
+
+  React.useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      setLoading(true);
+      try {
+        const url =
+          `/ws/rest/v1/encounter?patient=${patientUuid}&limit=100` +
+          `&v=custom:(uuid,encounterDatetime,obs:(uuid,concept:(uuid),value))`;
+        const { data } = await openmrsFetch(url);
+        const rows = (data?.results || [])
+          .filter((e: any) => e.obs?.some((o: any) => STIGMA_VISIT_UUIDS.has(o?.concept?.uuid))) // only सहभागी / पुनः भेट
+          .sort((a: any, b: any) => new Date(a.encounterDatetime).getTime() - new Date(b.encounterDatetime).getTime())
+          .map((e: any) => {
+            const vals: Record<string, number | null> = {};
+            INTERSECTIONAL_LINES.forEach((l) => {
+              const o = e.obs.find((x: any) => x?.concept?.uuid === l.uuid);
+              vals[l.uuid] = o ? toScore(o.value) : null;
+            });
+            return vals;
+          });
+        if (!cancelled) setVisits(rows);
+      } catch (err) {
+        console.error('Error loading intersectional scores', err);
+        if (!cancelled) setVisits([]);
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [patientUuid]);
+
+  if (loading) return <p>Loading stigma data...</p>;
+  if (!visits.length) return <p>No stigma data available</p>;
+
+  const suffix = (n: number) => (n === 1 ? 'st' : n === 2 ? 'nd' : n === 3 ? 'rd' : 'th');
+  const labels = visits.map((_, i) => `${i + 1}${suffix(i + 1)} visit`);
+
+  return (
+    <div
+      style={{
+        width: '100%', maxWidth: 700, margin: '0 auto', background: '#fff', borderRadius: 16,
+        boxShadow: '0 4px 16px rgba(0,0,0,0.10)', padding: '2rem 1rem',
+      }}
+    >
+      <div style={{ width: '100%', minHeight: 400, height: '50vw', maxHeight: 600 }}>
+        <Chart
+          type="line"
+          data={{
+            labels,
+            datasets: INTERSECTIONAL_LINES.map((l) => ({
+              label: l.label,
+              data: visits.map((v) => v[l.uuid]),
+              borderColor: l.color,
+              backgroundColor: l.color,
+              pointBackgroundColor: '#000',
+              pointBorderColor: '#000',
+              fill: false,
+              tension: 0.25,
+              pointRadius: 4,
+              borderWidth: 2,
+              spanGaps: true,
+            })),
+          }}
+          options={{
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              title: { display: true, text: 'Visit-wise Intersectional Stigma Scores by Type' },
+              legend: { position: 'bottom' },
+            },
+            scales: {
+              x: { title: { display: true, text: 'Visit' } },
+              y: { beginAtZero: true, title: { display: true, text: 'Score' } },
+            },
+          }}
+        />
+      </div>
+    </div>
+  );
+}
+
+
 function ArtIdPanel({ patients }: { patients: any[] }) {
   const [artId, setArtId] = React.useState('');
   const [selectedPatientUuid, setSelectedPatientUuid] = React.useState<string | null>(null);
@@ -1628,7 +1740,7 @@ function ArtIdPanel({ patients }: { patients: any[] }) {
           <div style={{ display: 'grid', gap: '1rem' }}>
             <div>
               {/* Per-patient stigma line chart */}
-              <MultiChartSelector patientUuid={selectedPatientUuid} chartType="line" showAllVisits />
+              <ArtIdIntersectionalLineChart patientUuid={selectedPatientUuid} />
             </div>
             <div>
               <h4 style={{ margin: '0 0 8px 0' }}>सहभागी फारम - उत्तरहरू</h4>

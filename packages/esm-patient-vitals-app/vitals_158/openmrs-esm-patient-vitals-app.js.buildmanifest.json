@@ -1,0 +1,1728 @@
+{
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 504,
+      "sizes": {
+        "javascript": 504
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "2.js"
+      ],
+      "auxiliaryFiles": [
+        "2.js.map"
+      ],
+      "hash": "e36a8891e1708de1",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 5947215,
+      "sizes": {
+        "consume-shared": 294,
+        "javascript": 5880202,
+        "asset": 43015,
+        "share-init": 378,
+        "runtime": 23326
+      },
+      "names": [
+        "main"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "auxiliaryFiles": [
+        "30d556f9c1d897df.png",
+        "334dc3ad3ecb1cc3.png",
+        "5925317341030088.png",
+        "75279d4d0f75884c.png",
+        "b8feb1e0d0c56398.png",
+        "bedf0f5093cf1fba.png",
+        "ee3e46312d46a54f.png",
+        "f0dff163c3ea0630.png",
+        "f20ebe83b4e81c45.png",
+        "main.js.map"
+      ],
+      "hash": "628b9fe6336bac52",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "236.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "f47624141fc95a4a",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: default)",
+      "size": 42,
+      "sizes": {
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "39941e1c8fd06320",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 59553,
+      "sizes": {
+        "javascript": 59553
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "446.js"
+      ],
+      "auxiliaryFiles": [
+        "446.js.map"
+      ],
+      "hash": "25690b1c40b67177",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "539.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "b32b40323d0567c4",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 3704570,
+      "sizes": {
+        "javascript": 3704570
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "610.js"
+      ],
+      "auxiliaryFiles": [
+        "610.js.map"
+      ],
+      "hash": "daab71f6462899f8",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2872,
+      "sizes": {
+        "javascript": 2872
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "744.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "af9796b757e43b3f",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "899.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "7c05ae6efba2a29e",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: default)",
+      "size": 42,
+      "sizes": {
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "d8b05e9e96ce6c81",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 2576912,
+      "sizes": {
+        "javascript": 2576912
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "1486.js"
+      ],
+      "auxiliaryFiles": [
+        "1486.js.map"
+      ],
+      "hash": "ed447bd5d2fb6d99",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2336,
+      "sizes": {
+        "javascript": 2336
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "1644.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "4098a7570e373f51",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 441542,
+      "sizes": {
+        "javascript": 441542
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "1763.js"
+      ],
+      "auxiliaryFiles": [
+        "1763.js.map"
+      ],
+      "hash": "6deed4fee7cbf5da",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 14545,
+      "sizes": {
+        "javascript": 14545
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "1814.js"
+      ],
+      "auxiliaryFiles": [
+        "1814.js.map"
+      ],
+      "hash": "6813480ba20f15e1",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "1901.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "1179916a1a3bed10",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "2016.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "d1b520c229c7994d",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: default)",
+      "size": 126,
+      "sizes": {
+        "consume-shared": 126
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "b53b566581133826",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: default)",
+      "size": 239713,
+      "sizes": {
+        "javascript": 239713
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "2258.js"
+      ],
+      "auxiliaryFiles": [
+        "2258.js.map"
+      ],
+      "hash": "2a717d8372e097d4",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 9014,
+      "sizes": {
+        "javascript": 9014
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "2437.js"
+      ],
+      "auxiliaryFiles": [
+        "2437.js.map"
+      ],
+      "hash": "90bc4d1bf4d6bc48",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 163792,
+      "sizes": {
+        "javascript": 163792
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "2442.js"
+      ],
+      "auxiliaryFiles": [
+        "2442.js.map"
+      ],
+      "hash": "e08e2c16c795a508",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: default)",
+      "size": 42,
+      "sizes": {
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "50c8175550993e81",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "2628.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "042224eae2598b49",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 3511,
+      "sizes": {
+        "javascript": 3511
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "2757.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "cfff2aac766d500c",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 7120,
+      "sizes": {
+        "javascript": 7120
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "2784.js"
+      ],
+      "auxiliaryFiles": [
+        "2784.js.map"
+      ],
+      "hash": "9e7047ad30ffe97a",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 62346,
+      "sizes": {
+        "javascript": 62346
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "2813.js"
+      ],
+      "auxiliaryFiles": [
+        "2813.js.map"
+      ],
+      "hash": "fed1e7c1c31b5dfc",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 373959,
+      "sizes": {
+        "javascript": 373959
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "3316.js"
+      ],
+      "auxiliaryFiles": [
+        "3316.js.map"
+      ],
+      "hash": "e26d58c7f4133abf",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 504,
+      "sizes": {
+        "javascript": 504
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "3372.js"
+      ],
+      "auxiliaryFiles": [
+        "3372.js.map"
+      ],
+      "hash": "e1c427267f3c446d",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2948,
+      "sizes": {
+        "javascript": 2948
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "3574.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "e9d2a892eb5b7fe3",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "3652.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "4edf30eda07a6868",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 138073,
+      "sizes": {
+        "javascript": 138073
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "3722.js"
+      ],
+      "auxiliaryFiles": [
+        "3722.js.map"
+      ],
+      "hash": "14e42775d8b73d9d",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 14545,
+      "sizes": {
+        "javascript": 14545
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "4233.js"
+      ],
+      "auxiliaryFiles": [
+        "4233.js.map"
+      ],
+      "hash": "f400c59bdd505ece",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "4272.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "99d6371935d3a5ab",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 3064,
+      "sizes": {
+        "javascript": 3064
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "4378.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "2290643c91090dc2",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 3011,
+      "sizes": {
+        "javascript": 3011
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "4460.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "4e2070aa0b045a99",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "4705.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "3c513a68a20fe61c",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "5060.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "2807d7de7682b3a1",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 21108,
+      "sizes": {
+        "javascript": 21108
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "5114.js"
+      ],
+      "auxiliaryFiles": [
+        "5114.js.map"
+      ],
+      "hash": "70f2a8f254eb2f44",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "5240.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "19c4b98b29f8b180",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "5336.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "cfe4e651bcfe054f",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "5673.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "ce488a08d651c146",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 3318,
+      "sizes": {
+        "javascript": 3318
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "5711.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "89e26035e100016d",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "5723.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "4a6ab378d54a4ce2",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "5737.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "36068af2282bbb32",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2808,
+      "sizes": {
+        "javascript": 2808
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "5833.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "af934a5339d41efe",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 1095596,
+      "sizes": {
+        "javascript": 1052581,
+        "asset": 43015
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app"
+      ],
+      "files": [
+        "5946.js"
+      ],
+      "auxiliaryFiles": [
+        "30d556f9c1d897df.png",
+        "334dc3ad3ecb1cc3.png",
+        "5925317341030088.png",
+        "5946.js.map",
+        "75279d4d0f75884c.png",
+        "b8feb1e0d0c56398.png",
+        "bedf0f5093cf1fba.png",
+        "ee3e46312d46a54f.png",
+        "f0dff163c3ea0630.png",
+        "f20ebe83b4e81c45.png"
+      ],
+      "hash": "11b6c0a6c496472a",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "5962.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "b21bd4ae5737f9be",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 23244,
+      "sizes": {
+        "javascript": 42,
+        "share-init": 378,
+        "runtime": 22824
+      },
+      "names": [
+        "@openmrs/esm-patient-vitals-app"
+      ],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app"
+      ],
+      "files": [
+        "openmrs-esm-patient-vitals-app.js"
+      ],
+      "auxiliaryFiles": [
+        "openmrs-esm-patient-vitals-app.js.map"
+      ],
+      "hash": "731f3960bced9979",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "6497.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "5718279ed29bfef9",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 3068,
+      "sizes": {
+        "javascript": 3068
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "6566.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "2310a5dd53cf6e46",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 314795,
+      "sizes": {
+        "javascript": 314795
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "6591.js"
+      ],
+      "auxiliaryFiles": [
+        "6591.js.map"
+      ],
+      "hash": "01636ff0d4dcd78e",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "6727.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "34a626ab30138a89",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 71497,
+      "sizes": {
+        "javascript": 71497
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "7048.js"
+      ],
+      "auxiliaryFiles": [
+        "7048.js.map"
+      ],
+      "hash": "88910652f13117df",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 39684,
+      "sizes": {
+        "javascript": 39684
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "7525.js"
+      ],
+      "auxiliaryFiles": [
+        "7525.js.map"
+      ],
+      "hash": "7e798f35be8bfc14",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 3044,
+      "sizes": {
+        "javascript": 3044
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "7807.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "7fa954bbce87ffe4",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "7998.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "3736cc40bdcee389",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 21108,
+      "sizes": {
+        "javascript": 21108
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "8154.js"
+      ],
+      "auxiliaryFiles": [
+        "8154.js.map"
+      ],
+      "hash": "b7107e0c05389b7a",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "8197.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "dc2f9eb34794a594",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2427,
+      "sizes": {
+        "javascript": 2427
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "8271.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "b2d2989b0b14604a",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 2053675,
+      "sizes": {
+        "javascript": 2053675
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app"
+      ],
+      "files": [
+        "8292.js"
+      ],
+      "auxiliaryFiles": [
+        "8292.js.map"
+      ],
+      "hash": "b0b5ca218bdd8fab",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 137481,
+      "sizes": {
+        "javascript": 137481
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "8316.js"
+      ],
+      "auxiliaryFiles": [
+        "8316.js.map"
+      ],
+      "hash": "021d791dd5cc3a20",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 3308,
+      "sizes": {
+        "javascript": 3308
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "8319.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "5f7d3ecff5bcc1c2",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "8323.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "cd16c97c9f6a7fc4",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 3217,
+      "sizes": {
+        "javascript": 3217
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "8360.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "7661b9b83af52e50",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 32643,
+      "sizes": {
+        "javascript": 32643
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "8404.js"
+      ],
+      "auxiliaryFiles": [
+        "8404.js.map"
+      ],
+      "hash": "ebc0cb42091b1d1d",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: default)",
+      "size": 42,
+      "sizes": {
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "348c5ede5fe6ae14",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "8765.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "d2055a332d4d9b7d",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "8788.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "f0b7161aec6b3451",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 7160,
+      "sizes": {
+        "javascript": 7160
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "8879.js"
+      ],
+      "auxiliaryFiles": [
+        "8879.js.map"
+      ],
+      "hash": "821fb6fad6d1e44f",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2900,
+      "sizes": {
+        "javascript": 2900
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "9261.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "e6892ef3bf53fa5c",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: default)",
+      "size": 84,
+      "sizes": {
+        "consume-shared": 84
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "adc2a35d13ed8258",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 259500,
+      "sizes": {
+        "javascript": 259500
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "9541.js"
+      ],
+      "auxiliaryFiles": [
+        "9541.js.map"
+      ],
+      "hash": "7cc82bf064d88f1f",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "9579.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "039bad9476a011a6",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2867,
+      "sizes": {
+        "javascript": 2867
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@openmrs/esm-patient-vitals-app",
+        "main"
+      ],
+      "files": [
+        "9790.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "368c5f88e2f66b38",
+      "childrenByOrder": {}
+    }
+  ]
+}
